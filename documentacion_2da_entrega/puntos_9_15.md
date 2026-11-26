@@ -1,26 +1,6 @@
-# Universidad Da Vinci de Guatemala
-
-**Facultad de Ingeniería, Industria y Tecnología**
-
-**Ingeniería de Software II**
-
-## Segunda entrega: Puntos 9 al 15
-
-**Proyecto:** Desarrollo de un CRM para AutoVentas GT, S. A.
-
-**Docente:** Ing. Raúl Hernández Reyna
-
-**Integrantes:**
-
-- Antony David Sequen Monroy (202300922)
-- Pedro Andrés Pereda Arriola (202404706)
-- José Armando Orantes Bolaños (202407391)
-
-**Fecha de entrega:** [pendiente de confirmar]
-
----
-
 ## Índice de contenido
+
+Introducción
 
 9. Gestión de riesgos
 10. Gestión de la triple restricción
@@ -30,6 +10,20 @@
 14. Lecciones aprendidas
 15. Presentación final
 
+Conclusiones
+
+Referencias
+
+## Introducción
+
+Este documento presenta la segunda entrega del proyecto del semestre de Ingeniería de Software II. El proyecto consiste en desarrollar un sistema de gestión de relaciones con clientes (CRM) para AutoVentas GT, S. A., una empresa dedicada a la venta de vehículos nuevos y usados, bajo el enfoque de ingeniería de software asistida por inteligencia artificial (IA), tal como lo define el enunciado del curso.
+
+El objetivo general del proyecto es aprender a desarrollar software recorriendo las etapas del ciclo de vida, con la IA colaborando en cada una de ellas. Según el enunciado, la IA no sustituye las decisiones del equipo: todas las propuestas generadas por la IA deben ser evaluadas, validadas y justificadas por los estudiantes. El proyecto no busca un producto comercial terminado, sino aplicar correctamente el proceso de desarrollo y demostrarlo con evidencia.
+
+La segunda entrega corresponde a los puntos 9 al 15 del enunciado: gestión de riesgos, gestión de la triple restricción (alcance, tiempo y costo), gestión de cambios, calidad, producto mínimo viable, lecciones aprendidas y presentación final. Cada sección describe las decisiones tomadas, la evidencia del uso de IA y los ajustes que el equipo realizó sobre los resultados generados.
+
+El documento se organiza en las secciones 9 a 15, seguidas de las conclusiones y las referencias. El código fuente y el ejecutable se entregan por separado, junto con la presentación de 20 minutos.
+
 ---
 
 ## 9. Gestión de riesgos
@@ -37,6 +31,10 @@
 Este apartado identifica los riesgos del proyecto en cuatro categorías: técnicos, humanos, operativos y los asociados al uso de inteligencia artificial (IA). Para cada riesgo se estima la probabilidad y el impacto en una escala de 1 (bajo) a 3 (alto). La criticidad se calcula como Probabilidad × Impacto y se revisa en cada sprint.
 
 ### 9.1 Registro de riesgos
+
+**Tabla 1**
+
+*Registro de riesgos del proyecto*
 
 | ID | Tipo | Riesgo | Prob. | Impacto | Criticidad | Mitigación | Contingencia |
 |----|------|--------|:-----:|:-------:|:----------:|------------|--------------|
@@ -68,6 +66,10 @@ La triple restricción relaciona alcance, tiempo y costo. Un cambio en cualquier
 
 ### 10.1 Línea base del proyecto
 
+**Tabla 2**
+
+*Línea base de la triple restricción*
+
 | Restricción | Línea base | Fuente |
 |-------------|-----------|--------|
 | Alcance | 15 HU, 61 SP. MVP con 9 HU Must (35 SP), 4 HU Should (18 SP), 1 HU Could (3 SP) y 1 HU Won't (5 SP). | Product backlog v1.0 |
@@ -75,6 +77,10 @@ La triple restricción relaciona alcance, tiempo y costo. Un cambio en cualquier
 | Costo | 384 HH (3 integrantes × 8 HH semanales × 16 semanas). 346 HH planificadas y 38 HH de contingencia. | Primera entrega, presupuesto |
 
 ### 10.2 Efecto de los cambios sobre la triple restricción
+
+**Tabla 3**
+
+*Efecto de los escenarios de cambio sobre la triple restricción*
 
 | Escenario de cambio | Alcance | Tiempo | Costo | Decisión |
 |---------------------|---------|--------|-------|----------|
@@ -93,6 +99,10 @@ Todo cambio al alcance, al calendario o a los requisitos sigue el mismo flujo. E
 
 ### 11.1 Flujo del proceso
 
+**Tabla 4**
+
+*Etapas del proceso de gestión de cambios*
+
 | Etapa | Responsable | Descripción | Salida |
 |-------|-------------|-------------|--------|
 | 1. Solicitud | Cualquier integrante o el cliente representado | Se registra la solicitud con descripción, motivo y prioridad. | Solicitud de cambio (CR-xx). |
@@ -102,6 +112,10 @@ Todo cambio al alcance, al calendario o a los requisitos sigue el mismo flujo. E
 | 5. Cierre | Equipo | Se verifica el cambio contra los criterios de aceptación y se actualiza el registro. | Cambio cerrado en el registro. |
 
 ### 11.2 Registro de cambios
+
+**Tabla 5**
+
+*Registro de solicitudes de cambio*
 
 | ID | Solicitud | Motivo | Impacto | Decisión |
 |----|-----------|--------|---------|----------|
@@ -146,6 +160,10 @@ Los resultados se documentarán en la tercera entrega, junto con las métricas d
 
 Se realizaron pruebas funcionales de la API con peticiones HTTP (cURL) sobre el backend levantado en el puerto 3001.
 
+**Tabla 6**
+
+*Pruebas funcionales de la API*
+
 | Caso de prueba | Resultado esperado | Resultado |
 |----------------|--------------------|-----------|
 | Inicio de sesión con credenciales válidas | Token y datos del usuario. | Aprobado. |
@@ -160,6 +178,10 @@ Se realizaron pruebas funcionales de la API con peticiones HTTP (cURL) sobre el 
 Después de las pruebas se eliminaron los registros de prueba de la base de datos.
 
 #### 12.3.2 Pruebas de la interfaz y de la segunda entrega
+
+**Tabla 7**
+
+*Pruebas de la interfaz y de la segunda entrega*
 
 | Caso de prueba | Resultado esperado | Resultado |
 |----------------|--------------------|-----------|
@@ -177,6 +199,10 @@ Después de las pruebas se eliminaron los registros de prueba de la base de dato
 
 ### 12.4 Defectos detectados
 
+**Tabla 8**
+
+*Defectos detectados durante el desarrollo*
+
 | ID | Defecto | Origen | Corrección |
 |----|---------|--------|------------|
 | D-01 | Error 500 por falta de la extensión cURL en PHP. | Entorno. | Instalar `php-curl`. |
@@ -193,9 +219,13 @@ Después de las pruebas se eliminaron los registros de prueba de la base de dato
 
 ### 12.6 Controles de seguridad
 
+**Tabla 9**
+
+*Controles de seguridad implementados*
+
 | Control | Implementación | Estado |
 |---------|----------------|--------|
-| Contraseñas | Hash con bcrypt. El costo por defecto es 12 rondas (variable `BCRYPT_ROUNDS`). Si el usuario no existe, se compara contra un hash ficticio para no revelar qué correos están registrados. | Implementado. |
+| Contraseñas | Hash con bcrypt (Provos y Mazières, 1999). El costo por defecto es 12 rondas (variable `BCRYPT_ROUNDS`). Si el usuario no existe, se compara contra un hash ficticio para no revelar qué correos están registrados. | Implementado. |
 | Arquitectura por endpoints | El frontend PHP no consulta la base de datos. Todo acceso pasa por la API REST. | Implementado. |
 | Consultas en capa de servicios | Las consultas viven en la capa de servicios del backend. Las páginas de usuario no contienen SQL. | Implementado. |
 | CORS | Solo se aceptan los orígenes definidos en `CORS_ORIGINS`. Por defecto, `http://localhost:8080`. | Implementado. |
@@ -207,6 +237,10 @@ Después de las pruebas se eliminaron los registros de prueba de la base de dato
 | Control de versiones | El archivo `.env` no se sube al repositorio. | Implementado. |
 
 ### 12.7 Roles y permisos
+
+**Tabla 10**
+
+*Permisos por rol para cada módulo y acción*
 
 | Módulo o acción | Admin | Gerente | Vendedor |
 |-----------------|:-----:|:-------:|:--------:|
@@ -226,6 +260,10 @@ La restricción se aplica en la API con los middlewares `authenticate` y `author
 El MVP cubre los módulos indispensables para operar el CRM. La tabla indica el estado real de cada HU al cierre de esta entrega.
 
 ### 13.1 Estado de las historias de usuario
+
+**Tabla 11**
+
+*Estado de las historias de usuario al cierre de la entrega*
 
 | HU | Historia | Prioridad | SP | Estado | Evidencia o pendiente |
 |----|----------|-----------|----|--------|-----------------------|
@@ -253,8 +291,8 @@ El MVP cubre los módulos indispensables para operar el CRM. La tabla indica el 
 
 ### 13.3 Arquitectura
 
-- **Backend:** Node.js con Express. Capas separadas en rutas, controladores, servicios y repositorios (principio de responsabilidad única). Base de datos MariaDB. Puerto 3001.
-- **Frontend:** PHP. Consume la API con cURL. Bootstrap 5.0.2 local. Estilos en `css/` y scripts en `js/`.
+- **Backend:** Node.js (OpenJS Foundation, s. f.-b) con Express (OpenJS Foundation, s. f.-a). Capas separadas en rutas, controladores, servicios y repositorios (principio de responsabilidad única). Base de datos MariaDB (MariaDB Foundation, s. f.). Puerto 3001.
+- **Frontend:** PHP (PHP Documentation Group, s. f.). Consume la API con cURL. Bootstrap 5.0.2 local (Bootstrap, s. f.). Estilos en `css/` y scripts en `js/`.
 - **Comunicación:** API REST en formato JSON, con token de sesión y CORS restringido por variable de entorno.
 - **Respuestas de error:** mensajes estándar por código HTTP (400, 401, 403, 404, 405, 409, 500, 501, 502, 503).
 
@@ -302,6 +340,10 @@ El MVP cubre los módulos indispensables para operar el CRM. La tabla indica el 
 
 La presentación tiene una duración máxima de 20 minutos. La distribución propuesta es la siguiente:
 
+**Tabla 12**
+
+*Distribución propuesta de la presentación de 20 minutos*
+
 | Minutos | Sección | Contenido | Evidencia |
 |---------|---------|-----------|-----------|
 | 0 a 2 | Problema | Situación actual de AutoVentas GT y necesidad del CRM. | Casos de uso (primera entrega). |
@@ -318,3 +360,35 @@ La presentación tiene una duración máxima de 20 minutos. La distribución pro
 - Tener preparados datos de prueba ficticios y los tres usuarios de demostración (Admin, Gerente y Vendedor).
 - Tener una captura de respaldo de cada módulo en caso de fallo de red o de servicio.
 - Las capturas están en la carpeta `capturas/` y las imágenes de vehículos en `imagenes_vehiculos/`.
+
+---
+
+## Conclusiones
+
+El desarrollo del CRM confirma que la IA acelera el trabajo, pero no reemplaza el criterio del equipo. Durante la segunda entrega, la IA propuso código, estructuras, rutas y supuestos sobre el entorno. Cuando las instrucciones eran precisas y se verificaban en ejecución, el resultado fue útil. Cuando el equipo aceptó respuestas sin revisarlas, aparecieron errores de sintaxis, rutas inexistentes y comandos que no existían en el proyecto. Esto ocurrió en el riesgo R-10 de la sección 9.
+
+La calidad del desarrollo depende de la calidad de los prompts. Un prompt correcto indica el contexto del proyecto, el alcance del cambio, las restricciones y la forma de comprobar el resultado. Por ello, el equipo registró los prompts, los errores encontrados y las correcciones. Esta práctica cumple la evidencia obligatoria de IA que pide el enunciado: herramienta, prompt, resultado, ajustes y justificación de la decisión final.
+
+El enfoque de "vibe coding", que consiste en describir lo que se quiere en lenguaje natural y aceptar el código generado con poca revisión, es eficiente cuando el desarrollador tiene los conocimientos necesarios para evaluar lo que la IA produce. Con conocimiento de arquitectura, seguridad, bases de datos y pruebas, el equipo pudo detectar errores, corregirlos y justificar cada decisión. Sin esos conocimientos, la misma velocidad habría producido un sistema difícil de mantener y con fallas de seguridad no detectadas.
+
+Los resultados principales de la segunda entrega son los siguientes:
+
+- Se implementó el MVP con autenticación, control de acceso por roles y módulos de clientes, prospectos, vehículos, cotizaciones, usuarios y reportes.
+- La arquitectura separa el frontend en PHP del backend en Node.js con Express y la base de datos en MariaDB, y todo el acceso a datos pasa por la API.
+- Se gestionaron los riesgos, la triple restricción y los cambios con registros verificables.
+
+Como pasos siguientes, el equipo debe completar las pruebas automatizadas, la prueba de vencimiento de sesión y el análisis estático. Cada decisión de IA que se incorpore debe seguir pasando por la verificación humana descrita en la sección 12.5.
+
+## Referencias
+
+Bootstrap. (s. f.). *Bootstrap 5 documentation*. https://getbootstrap.com/docs/5.0/
+
+MariaDB Foundation. (s. f.). *MariaDB Knowledge Base*. https://mariadb.com/kb/
+
+OpenJS Foundation. (s. f.-a). *Express: Fast, unopinionated, minimalist web framework for Node.js*. https://expressjs.com/
+
+OpenJS Foundation. (s. f.-b). *Node.js documentation*. https://nodejs.org/docs/
+
+PHP Documentation Group. (s. f.). *Manual de PHP*. https://www.php.net/manual/es/
+
+Provos, N., y Mazières, D. (1999). A future-adaptive password scheme. En *Proceedings of the 1999 USENIX Annual Technical Conference, FREENIX Track*. USENIX Association.

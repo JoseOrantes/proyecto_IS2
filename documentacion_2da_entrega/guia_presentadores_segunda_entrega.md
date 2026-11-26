@@ -8,6 +8,10 @@
 
 ## 1. Roles del equipo
 
+**Tabla 1**
+
+*Roles del equipo en la exposición*
+
 | Integrante | Carné | Responsabilidad en la exposición |
 |------------|-------|----------------------------------|
 | Antony David Sequen Monroy | 202300922 | Portada, problema, riesgos y cierre. |
@@ -19,6 +23,10 @@
 ---
 
 ## 2. Distribución de tiempo
+
+**Tabla 2**
+
+*Distribución del tiempo de la presentación de 20 minutos*
 
 | Minutos | Sección | Diapositivas | Expositor |
 |---------|---------|--------------|-----------|
@@ -87,7 +95,7 @@
 
 **Tiempo:** 1.5 min · **Expositor:** José
 
-**Guion de exposición:** "El frontend está hecho en PHP y usa Bootstrap 5 de forma local. Los estilos están en la carpeta css y los scripts en la carpeta js. El backend está en Node.js con Express y se divide en rutas, controladores, servicios y repositorios, según el principio de responsabilidad única. La base de datos es MariaDB. El frontend no consulta la base de datos: todo pasa por la API REST."
+**Guion de exposición:** "El frontend está hecho en PHP (PHP Documentation Group, s. f.) y usa Bootstrap 5 de forma local (Bootstrap, s. f.). Los estilos están en la carpeta css y los scripts en la carpeta js. El backend está en Node.js (OpenJS Foundation, s. f.-b) con Express (OpenJS Foundation, s. f.-a) y se divide en rutas, controladores, servicios y repositorios, según el principio de responsabilidad única. La base de datos es MariaDB (MariaDB Foundation, s. f.). El frontend no consulta la base de datos: todo pasa por la API REST."
 
 **Autopregunta del expositor:** "¿Por qué separar el backend en capas? Si cambia la forma de guardar datos, solo cambia el repositorio. Las reglas de negocio quedan en los servicios y no se repiten en las rutas."
 
@@ -95,7 +103,7 @@
 
 **Tiempo:** 1.5 min · **Expositor:** José
 
-**Guion de exposición:** "Las contraseñas se guardan con bcrypt y 12 rondas. El acceso a la API está limitado a los orígenes definidos en CORS. Cada ruta valida el token y el rol. La sesión del frontend vence después de 5 minutos sin actividad. Los errores devuelven mensajes estándar y no muestran detalles internos del servidor. Eliminar y editar están limitados al administrador. El módulo de usuarios solo se muestra y se abre para el administrador, aunque se escriba la URL."
+**Guion de exposición:** "Las contraseñas se guardan con bcrypt y 12 rondas (Provos y Mazières, 1999). El acceso a la API está limitado a los orígenes definidos en CORS. Cada ruta valida el token y el rol. La sesión del frontend vence después de 5 minutos sin actividad. Los errores devuelven mensajes estándar y no muestran detalles internos del servidor. Eliminar y editar están limitados al administrador. El módulo de usuarios solo se muestra y se abre para el administrador, aunque se escriba la URL."
 
 **Autopregunta del expositor:** "¿Por qué el archivo .htaccess no protege en el servidor de desarrollo? El servidor integrado de PHP no lee el archivo .htaccess. En Apache o LiteSpeed, como en Hostinger, sí se aplica."
 
@@ -182,3 +190,17 @@
 - Tener las capturas de respaldo de `capturas/` abiertas en caso de fallo.
 - Si la sesión vence durante la demostración, volver a iniciar sesión.
 - Revisar esta guía al menos una vez antes de presentarla.
+
+## Referencias
+
+Bootstrap. (s. f.). *Bootstrap 5 documentation*. https://getbootstrap.com/docs/5.0/
+
+MariaDB Foundation. (s. f.). *MariaDB Knowledge Base*. https://mariadb.com/kb/
+
+OpenJS Foundation. (s. f.-a). *Express: Fast, unopinionated, minimalist web framework for Node.js*. https://expressjs.com/
+
+OpenJS Foundation. (s. f.-b). *Node.js documentation*. https://nodejs.org/docs/
+
+PHP Documentation Group. (s. f.). *Manual de PHP*. https://www.php.net/manual/es/
+
+Provos, N., y Mazières, D. (1999). A future-adaptive password scheme. En *Proceedings of the 1999 USENIX Annual Technical Conference, FREENIX Track*. USENIX Association.

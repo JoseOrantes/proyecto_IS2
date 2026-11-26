@@ -1,17 +1,16 @@
-# Presentación: Segunda entrega (Puntos 9 al 15)
-
-Desarrollo de un CRM para AutoVentas GT, S. A.
-
----
-
 ## Slide 1: Portada
 
 **Universidad Da Vinci de Guatemala**
 Facultad de Ingeniería, Industria y Tecnología
 Ingeniería de Software II
 
-**CRM AutoVentas GT, S. A.**
-Segunda entrega: Puntos 9 al 15
+**CRM AutoVentas GT, S. A.: Segunda entrega (Puntos 9 al 15)**
+
+![Concesionaria al amanecer](imagenes_genericas/s01_portada_concesionaria.png)
+
+**Figura 1.** *Concesionaria al amanecer (imagen genérica)*
+
+*Nota.* Ilustración creada con IA para fines de presentación.
 
 Docente: Ing. Raúl Hernández Reyna
 
@@ -23,6 +22,12 @@ Integrantes:
 ---
 
 ## Slide 2: Agenda
+
+![Ruta de trabajo](imagenes_genericas/s02_agenda_ruta.png)
+
+**Figura 2.** *Ruta de trabajo del proyecto (imagen genérica)*
+
+*Nota.* Ilustración creada con IA para fines de presentación.
 
 1. Problema y alcance
 2. Gestión de riesgos
@@ -36,6 +41,12 @@ Integrantes:
 
 ## Slide 3: Problema de AutoVentas GT
 
+![Documentos dispersos](imagenes_genericas/s03_problema_documentos.png)
+
+**Figura 3.** *Información dispersa en documentos y hojas de cálculo (imagen genérica)*
+
+*Nota.* Ilustración creada con IA para fines de presentación.
+
 - Clientes e inventario en hojas de cálculo y documentos separados.
 - Pérdida de oportunidades y datos duplicados.
 - Sin seguimiento desde el prospecto hasta la venta.
@@ -45,6 +56,12 @@ Integrantes:
 ---
 
 ## Slide 4: Gestión de riesgos
+
+![Alerta de riesgo](imagenes_genericas/s04_riesgos.png)
+
+**Figura 4.** *Alerta de riesgo en el proyecto (imagen genérica)*
+
+*Nota.* Ilustración creada con IA para fines de presentación.
 
 | Riesgo | Criticidad | Mitigación |
 |--------|:----------:|------------|
@@ -58,6 +75,12 @@ Integrantes:
 ---
 
 ## Slide 5: Triple restricción y gestión de cambios
+
+![Balance del proyecto](imagenes_genericas/s05_triple_restriccion.png)
+
+**Figura 5.** *Equilibrio entre alcance, tiempo y costo (imagen genérica)*
+
+*Nota.* Ilustración creada con IA para fines de presentación.
 
 - **Alcance:** 15 HU, 61 SP. MVP con 9 HU Must.
 - **Tiempo:** 16 semanas, 8 sprints de 2 semanas.
@@ -77,6 +100,12 @@ Integrantes:
 
 ## Slide 6: Uso de la IA y registro de prompts
 
+![Desarrollo asistido por IA](imagenes_genericas/s06_ia.png)
+
+**Figura 6.** *Desarrollo asistido por inteligencia artificial (imagen genérica)*
+
+*Nota.* Ilustración creada con IA para fines de presentación.
+
 - La IA generó código, vistas, documentación e imágenes.
 - Cada respuesta se verificó ejecutándola.
 - Errores detectados y corregidos quedaron en el registro de prompts.
@@ -89,6 +118,12 @@ Integrantes:
 
 ## Slide 7: Arquitectura
 
+![Arquitectura en capas](imagenes_genericas/s07_arquitectura.png)
+
+**Figura 7.** *Arquitectura en capas: frontend, API y base de datos (imagen genérica)*
+
+*Nota.* Ilustración creada con IA para fines de presentación.
+
 - **Frontend:** PHP con Bootstrap 5 local. Estilos en `css/` y scripts en `js/`.
 - **Backend:** Node.js con Express. Capas de rutas, controladores, servicios y repositorios.
 - **Base de datos:** MariaDB.
@@ -99,6 +134,12 @@ El frontend no consulta la base de datos. Todo acceso pasa por la API.
 ---
 
 ## Slide 8: Seguridad
+
+![Protección de acceso](imagenes_genericas/s08_seguridad.png)
+
+**Figura 8.** *Protección de acceso y control de sesión (imagen genérica)*
+
+*Nota.* Ilustración creada con IA para fines de presentación.
 
 - Contraseñas con **bcrypt** (12 rondas).
 - **CORS** restringido por variable de entorno.
@@ -112,7 +153,11 @@ El frontend no consulta la base de datos. Todo acceso pasa por la API.
 
 ## Slide 9: Demostración: inicio de sesión
 
-![Pantalla de inicio de sesión](../front_end/imagenes/login-predio.png)
+![Pantalla de inicio de sesión](capturas/00_login.png)
+
+**Figura 9.** *Pantalla de inicio de sesión del CRM*
+
+*Nota.* Captura de pantalla de la aplicación en desarrollo local.
 
 *Login con imagen de predio de vehículos. Demo con Admin, Gerente y Vendedor.*
 
@@ -122,6 +167,10 @@ El frontend no consulta la base de datos. Todo acceso pasa por la API.
 
 ![Dashboard](capturas/01_dashboard.png)
 
+**Figura 10.** *Dashboard del CRM*
+
+*Nota.* Captura de pantalla de la aplicación en desarrollo local.
+
 *Indicadores generales y accesos a los módulos.*
 
 ---
@@ -130,7 +179,15 @@ El frontend no consulta la base de datos. Todo acceso pasa por la API.
 
 ![Clientes](capturas/02_clientes.png)
 
+**Figura 11.** *Módulo de clientes*
+
+*Nota.* Captura de pantalla de la aplicación en desarrollo local.
+
 ![Prospectos](capturas/03_prospectos.png)
+
+**Figura 12.** *Módulo de prospectos*
+
+*Nota.* Captura de pantalla de la aplicación en desarrollo local.
 
 *Alta, edición y eliminación (solo Admin) con confirmación.*
 
@@ -140,7 +197,15 @@ El frontend no consulta la base de datos. Todo acceso pasa por la API.
 
 ![Vehículos](capturas/04_vehiculos.png)
 
+**Figura 13.** *Catálogo de vehículos*
+
+*Nota.* Captura de pantalla de la aplicación en desarrollo local.
+
 ![Cotizaciones](capturas/05_cotizaciones.png)
+
+**Figura 14.** *Módulo de cotizaciones*
+
+*Nota.* Captura de pantalla de la aplicación en desarrollo local.
 
 *Botón Eliminar a la izquierda de Aprobar. Aprobación de descuentos por gerente.*
 
@@ -156,7 +221,9 @@ El frontend no consulta la base de datos. Todo acceso pasa por la API.
 | ![Minivan](imagenes_vehiculos/4_minivan.png) | Minivan |
 | ![Coupé](imagenes_vehiculos/5_coupe.png) | Coupé |
 
-*Imágenes ilustrativas generadas con IA.*
+**Figura 15.** *Tipos de vehículo del catálogo: carro, pickup, camión, minivan y coupé*
+
+*Nota.* Imágenes ilustrativas generadas con IA.
 
 ---
 
@@ -164,11 +231,19 @@ El frontend no consulta la base de datos. Todo acceso pasa por la API.
 
 ![Usuarios](capturas/06_usuarios.png)
 
-*Módulo solo para Admin: alta, edición, desactivación y eliminación. Un Gerente o Vendedor que escriba la URL `?page=usuarios` no accede a él.*
+**Figura 16.** *Módulo de usuarios y roles*
+
+*Nota.* Captura de pantalla de la aplicación en desarrollo local. El módulo es solo para Admin: alta, edición, desactivación y eliminación. Un Gerente o Vendedor que escriba la URL `?page=usuarios` no accede a él.
 
 ---
 
 ## Slide 15: Calidad y pruebas
+
+![Revisión de requisitos](imagenes_genericas/s15_calidad.png)
+
+**Figura 17.** *Revisión de requisitos y pruebas (imagen genérica)*
+
+*Nota.* Ilustración creada con IA para fines de presentación.
 
 - Pruebas funcionales de la API con cURL. Todas aprobadas.
 - Restricción por rol verificada con respuesta 403.
@@ -179,6 +254,12 @@ El frontend no consulta la base de datos. Todo acceso pasa por la API.
 
 ## Slide 16: Lecciones aprendidas
 
+![Lista de verificación](imagenes_genericas/s16_lecciones.png)
+
+**Figura 18.** *Lista de verificación de lecciones aprendidas (imagen genérica)*
+
+*Nota.* Ilustración creada con IA para fines de presentación.
+
 **Qué funcionó:** capas separadas, pruebas directas de la API y configuración por variables de entorno.
 
 **Qué no funcionó:** errores de sintaxis de la IA y documentación desfasada con el código.
@@ -188,6 +269,12 @@ El frontend no consulta la base de datos. Todo acceso pasa por la API.
 ---
 
 ## Slide 17: Cierre
+
+![Concesionaria nocturna](imagenes_genericas/s17_cierre_concesionaria.png)
+
+**Figura 19.** *Concesionaria de noche con vehículos (imagen genérica)*
+
+*Nota.* Ilustración creada con IA para fines de presentación.
 
 Gracias.
 
