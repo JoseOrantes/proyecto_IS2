@@ -1,0 +1,14 @@
+# Evita listar el contenido de las carpetas.
+Options -Indexes
+
+DirectoryIndex index.php
+
+RewriteEngine On
+
+# Código interno (vistas, servicios, acceso a datos): solo se ejecuta desde PHP, nunca desde el navegador.
+RewriteRule ^(src|services|db)(/|$) - [F,L]
+
+# Archivos sensibles o de configuración.
+<FilesMatch "^\.|\.(env|sql|md|ini|log|bak)$">
+    Require all denied
+</FilesMatch>
